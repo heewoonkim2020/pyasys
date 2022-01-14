@@ -43,3 +43,7 @@ pyasysIGNORE = IGNORE_DIR.copy()
 if pyasysIGNORE:
     pyasysIGNORE_COUNT = pyasysIGNORE.count()
     pyasysIGNORE_COUNT += 1
+elif pyasysIGNORE == "hardwareError":
+    raise SystemError("Error encountered with Pyasys & hardware state of Pyasys.")
+else:
+    raise Exception(".pyasysignore failed.")
