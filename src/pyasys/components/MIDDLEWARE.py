@@ -5,6 +5,10 @@ Recommended only for advanced users. Do not change this file unless you are real
 This file is the host of the official source code of Pyasys's core components.
 """
 
+# git clone https://github.com/heewoonkim2020/pyasys.git
+# Cloning: Supported --Git -u origin
+# Make sure to add origin connect!
+
 import random
 
 """
@@ -45,5 +49,6 @@ if pyasysIGNORE:
     pyasysIGNORE_COUNT += 1
 elif pyasysIGNORE == "hardwareError":
     raise SystemError("Error encountered with Pyasys & hardware state of Pyasys.")
+    # Error in HardwareState: Not with error --pyasys
 else:
     raise Exception(".pyasysignore failed.")
