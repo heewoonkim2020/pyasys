@@ -1,6 +1,8 @@
 """
 MIDDLEWARE support for Pyasys.
 Recommended only for advanced users. Do not change this file unless you are really sure you know what you are doing.
+
+This file is the host of the official source code of Pyasys's core components.
 """
 
 import random
@@ -11,3 +13,14 @@ TOKEN: Random authenticator token.
 """
 TRACK_ID = random.randint(1, 10000)
 TOKEN = random.randint(1, 10000)
+
+# MiddleToken (supporting)
+MIDDLETOKEN_SUPPORT = True  # For now, MiddleToken is supported for Pyasys development.
+MIDDLETOKEN_CONFIG = [
+    # Configuration dict for MiddleToken.
+    ['pyasys.components.middleware', 'pyasys/components/MIDDLEWARE.py']
+]
+MIDDLETOKEN_AUTH = [
+    # Authentication information for MiddleToken.
+    ['token', random.randint(1, 10000)]
+]
