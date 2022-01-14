@@ -43,4 +43,3 @@ pyasysIGNORE = IGNORE_DIR.copy()
 if pyasysIGNORE:
     pyasysIGNORE_COUNT = pyasysIGNORE.count()
     pyasysIGNORE_COUNT += 1
-    # Based conflict: None
