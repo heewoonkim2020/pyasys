@@ -26,6 +26,9 @@ REQUIRED_APPS = [
 REQUIRED_COMPONENTS = [
     'pyasys',
     'pyasys.components.MIDDLEWARE',
+    'pyasys.components.*',
+    'pyasys.*',
+    '*.pyc',
 ]
 
 for required_app in REQUIRED_APPS:

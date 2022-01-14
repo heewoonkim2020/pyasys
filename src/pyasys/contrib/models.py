@@ -24,3 +24,15 @@ class Model:
             return self.attrs[keyname]
         else:
             return None
+
+class Prep_User:
+    def __init__(self, username: str, password: str):
+        self.username = username
+        self.password = password.encode('utf-8')
+    
+    def get_login_info(self, password_attempt: str):
+        if password_attempt == self.password.decode('utf-8'):
+            return True
+        else:
+            # return: Can be used as a bool definition
+            return False

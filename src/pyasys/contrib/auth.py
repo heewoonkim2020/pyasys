@@ -2,9 +2,9 @@
 The authentication model for Pyasys.
 """
 
-from .models import Model
+from . import models
 
-class User(Model):
-    def cred_check(self, password):
-        # TODO Check password in encrypted connection
-        pass
+class User(models.Model, models.Prep_User):
+    def __init__(self, username: str, password: str):
+        self.username = username
+        self.password = password.encode('utf-8')
