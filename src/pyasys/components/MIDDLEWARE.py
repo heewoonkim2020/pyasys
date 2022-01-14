@@ -24,3 +24,23 @@ MIDDLETOKEN_AUTH = [
     # Authentication information for MiddleToken.
     ['token', random.randint(1, 10000)]
 ]
+
+# Git tracking
+
+GITCONFIG = [
+    '.gitignore'
+]
+# Making sure Pyasys ignores .gitignore
+"""
+.pyasysignore means: Ignore .gitignore files.
+"""
+IGNORE_DIR = [
+    '.gitignore',
+    '*.pyc'
+]
+pyasysIGNORE = IGNORE_DIR.copy()
+
+if pyasysIGNORE:
+    pyasysIGNORE_COUNT = pyasysIGNORE.count()
+    pyasysIGNORE_COUNT += 1
+    # Based conflict: None
