@@ -8,3 +8,8 @@ body:
       description: What the error does. Explain this clearly to ensure a solution can be given to you.
     validations:
       required: true
+  
+  - type: textarea
+    attributes:
+      label: How To Reproduce
+      description: Explain how to create the issue. For example, provide information about when the bug occurs.
