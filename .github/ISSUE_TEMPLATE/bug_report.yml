@@ -1,5 +1,5 @@
 name: Bug Report
-description: Report bugs about Pyasys. Please add information to the form fields below.
+description: Report bugs about Pyasys. Please add information to the form fields below. After submitting, you will be in touch with our devs and community experts shortly.
 labels: [ "status: bug", "type: bug" ]
 body:
   - type: textarea
@@ -28,5 +28,3 @@ body:
       description: Would you like to send us additional information? You can do so here.
     validations:
       required: false
-  
-  Thank you. Our team and users will be in touch with you shortly. Until then, we are sorry for the inconvenience!
