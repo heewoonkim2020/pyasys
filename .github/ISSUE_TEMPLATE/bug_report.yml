@@ -13,3 +13,12 @@ body:
     attributes:
       label: How To Reproduce
       description: Explain how to create the issue. For example, provide information about when the bug occurs.
+    validations:
+      required: true
+  
+  - type: textarea
+    attributes:
+      label: Expected Solution that Does Not Work
+      description: Did you try a solution that you expected to work, but it did not? Share it here. If you do not have this info, this field is not required.
+    validations:
+      required: false
