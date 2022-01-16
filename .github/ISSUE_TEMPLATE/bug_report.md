@@ -7,4 +7,10 @@ assignees: ''
 
 ---
 
-Test
+body:
+  - type: textarea
+    attributes:
+      label: Behavior
+      description: Error messages, extra error behavior, etc.
+      validations:
+        required: true
