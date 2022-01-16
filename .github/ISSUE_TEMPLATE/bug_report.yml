@@ -1,5 +1,5 @@
-name: Behavior Bug or Plugin Incompatibility
-description: Report issues with plugin incompatbility or other behavior related issues.
+name: Bug Report
+description: Report bugs about Pyasys. Please add information to the form fields below.
 labels: [ "status: bug", "type: bug" ]
 body:
   - type: textarea
