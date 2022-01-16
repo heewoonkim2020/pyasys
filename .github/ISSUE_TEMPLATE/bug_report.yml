@@ -22,3 +22,11 @@ body:
       description: Did you try a solution that you expected to work, but it did not? Share it here. If you do not have this info, this field is not required.
     validations:
       required: false
+  - type: textarea
+    attributes:
+      label: Additional Information
+      description: Would you like to send us additional information? You can do so here.
+    validations:
+      required: false
+  
+  Thank you. Our team and users will be in touch with you shortly. Until then, we are sorry for the inconvenience!
