@@ -25,6 +25,6 @@ body:
   - type: textarea
     attributes:
       label: Additional Information
-      description: Would you like to send us additional information? You can do so here.
+      description: Would you like to send us additional information? You can do so here. This field is not required.
     validations:
       required: false
