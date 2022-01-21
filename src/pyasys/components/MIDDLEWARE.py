@@ -22,7 +22,8 @@ TOKEN = random.randint(1, 10000)
 MIDDLETOKEN_SUPPORT = True  # For now, MiddleToken is supported for Pyasys development.
 MIDDLETOKEN_CONFIG = [
     # Configuration dict for MiddleToken.
-    ['pyasys.components.middleware', 'pyasys/components/MIDDLEWARE.py']
+    ['pyasys.components.middleware', 'pyasys/components/MIDDLEWARE.py'],
+    ['pyasys.token.auth', 'pyasys/auth.contrib.auth/User/models.py']
 ]
 MIDDLETOKEN_AUTH = [
     # Authentication information for MiddleToken.
