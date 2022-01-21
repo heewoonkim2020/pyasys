@@ -1,0 +1,17 @@
+name: Documentation
+description: State improvements to the documentation, and the docs.
+labels: [ "status: documentation", "type: documentation" ]
+body:
+  - type: textarea
+    attributes:
+      label: Section
+      description: Which part of the documentation are you willing to improve?
+    validations:
+      required: true
+  
+  - type: textarea
+    attributes:
+      label: Improvement
+      description: State which statement is incorrect or needs to be improved, and share how the new documentation should look like.
+    validations:
+      required: true
