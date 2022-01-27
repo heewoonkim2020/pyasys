@@ -73,9 +73,16 @@ for configuration in MIDDLETOKEN_CONFIG:
         elif configuration[1] == "pyasys.token.auth/User/models.py":
             user_model = typing_extensions.AsyncContextManager
         
-def async_context():
+def async_context(func):
     """
     Basic wrapper class for async context generations.
     """
     def wrapper():
         context: str
+        context_uri: int = 0
+        if type(context_uri) == int:
+            func()
+        else:
+            raise TypeError("Invalid type for pyasys.clone")
+
+    return wrapper
